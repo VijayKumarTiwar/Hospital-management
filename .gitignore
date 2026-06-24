@@ -1,5 +1,51 @@
-node_modules/
-dist/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Environment variables
 .env
+.env.*
+!.env.example
+
+# ML Models (large binary files)
+# *.joblib
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
-.git/
+Thumbs.db
+
+# Node
+node_modules/
