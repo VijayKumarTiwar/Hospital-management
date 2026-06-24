@@ -8,7 +8,7 @@ import os
 import joblib
 import pandas as pd
 
-MODEL_DIR = os.path.join(os.path.dirname(__file__), "ml_models")
+MODEL_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "ml_models")
 
 _cache = {}
 

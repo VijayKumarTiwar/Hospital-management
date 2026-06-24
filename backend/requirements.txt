@@ -10,4 +10,4 @@ pandas==3.0.2
 numpy==2.4.4
 joblib==1.5.3
 gunicorn==23.0.0
-
+drf-yasg==1.21.10
