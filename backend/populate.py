@@ -19,6 +19,10 @@ Specialization.objects.all().delete()
 # keep superusers, delete others
 User.objects.exclude(is_superuser=True).delete()
 
+print("Creating Admin User...")
+if not User.objects.filter(email="admin@example.com").exists():
+    User.objects.create_superuser(username="admin", email="admin@example.com", password="password")
+
 print("Creating specializations...")
 cardio = Specialization.objects.create(name="Cardiology", description="Heart related issues")
 neuro = Specialization.objects.create(name="Neurology", description="Brain and nervous system")
